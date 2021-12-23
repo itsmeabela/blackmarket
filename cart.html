@@ -1,0 +1,149 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>www.All Products-Blackmarket.com</title>
+        <link rel="stylesheet" type="text/css" href="bmstyle.css">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <marquee>FOR SALE CONTACT US!!</marquee>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/BM LOGO.png" width="125px" alt=" BM logo"></style>
+                </div>
+                <div class="bmword">
+                    <h3>BLACK market</h3>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="BM.html">Home</li>
+						<li><a href="product.html">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="#contant">Contuct us</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="img/cart.png" class="cart-icon" width="30px" height="30px">
+                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+        <!-------------------cart item detail ------------------->
+        <div class="small-container cart-page">
+
+            <table>
+                <tr>
+                    <th>Products</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/product-1.jpg" style="width:40%">
+                            <div>
+                                <p>cool red T-shirt</p>
+                                <small>price 304birr</small>
+                                <br>
+                                <a href="" class="btn">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+
+                            <div>
+                                <p>cool red T-shirt</p>
+                                <small>price 304birr</small>
+                                <br>
+                                <a href="" class="btn">Buy</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>500birr</td>
+                    </tr>
+                    <tr>
+                        <td>tax</td>
+                        <td>15birr</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>1000birr</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <!--------------------footer---------------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app for more experiance</h3>
+                        <p>download for android and ios mobile</p>
+                        <div class="app-logo">
+                            <img src="img/p1.jpg">
+                            <img src="img/p2.jpg">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="img/logo.jpg">
+                        <p>Our Duty Is To Satisfy Your Need And To Bring You Affordable Item And Products.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3 id="contact">useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Become Partner</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li><a href="abelrobel7@gmail.com" style="color: white;">Email Address</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">copy right 2021 - shopping</p>
+            </div>
+        </div>
+        <!-----js for menu toggle--->
+        <script type="text/javascript">
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.bmstyle.maxHeight = "0px";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+
+                    MenuItems.style.maxHeight = "200px";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+
+    </html>
