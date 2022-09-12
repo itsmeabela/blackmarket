@@ -32,23 +32,32 @@ nav ul {
     display: inline-block;
     list-style-type: none;
 }
-
+a{
+   text-decoration: none; 
+}
 nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
 
-a {
-    text-decoration: none;
+nav a {
+    
     color: black;
     transition: background 0.5s;
     border-radius: 30px;
+    position: relative;
 }
-
-a:hover {
-    border-radius: 30px;
-    color: #fff;
-    background: rgb(0, 0, 0);
+nav a::before{
+    content: '';
+    height: 2px;
+    position: absolute;
+    width: 0%;
+    background: orangered;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+nav a:hover:before{
+width: 100%;
 }
 
 p {
